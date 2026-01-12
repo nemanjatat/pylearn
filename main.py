@@ -129,10 +129,21 @@ print(help(int)) # we can see __add__ defined method in the int class
 print(laptop.price.__add__(10000))
 """
 # Data Types
-
+###
+# int
+"""
 total_salary = 11000
 bonus_salary = 1000
 
 base_salary = total_salary - bonus_salary
 print(base_salary)
 print(type(base_salary))
+"""
+# str
+"""
+data = "data".capitalize()
+analyst = "analyst".capitalize()
+
+data_analyst = f"{data} {analyst}"
+print(data_analyst)
+"""
