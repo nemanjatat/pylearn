@@ -5,6 +5,7 @@ print("Hi World!")
 """
 
 # Variables
+"""
 salary = 100000 # in RSD
 bonus_rate = .10 # 10%
 employee_name = "Dean"
@@ -26,9 +27,9 @@ print("Job ID:        ", job_id)
 print("Job Title:     ", job_title)
 print("Job Salary:    ", job_salary)
 print("Job WFH:       ", job_wfh)
-
+"""
 # Python Terms
-
+###
 # Object: a data record with fields; an instance of a class
 """
 salary = 100000
@@ -65,6 +66,7 @@ print(id(job_1))
 print(id(job_2))
 """
 # you can assign anything to variables
+"""
 my_print_func = print
 
 my_print_func("Hi hello!")
@@ -125,3 +127,12 @@ laptop.display_info()
 print(help(int)) # we can see __add__ defined method in the int class
 
 print(laptop.price.__add__(10000))
+"""
+# Data Types
+
+total_salary = 11000
+bonus_salary = 1000
+
+base_salary = total_salary - bonus_salary
+print(base_salary)
+print(type(base_salary))
