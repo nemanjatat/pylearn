@@ -148,7 +148,39 @@ data_analyst = f"{data} {analyst}"
 print(data_analyst)
 """
 # float
+"""
 int_number = 102
 print(type(int_number))
 turn_int_to_float_number = float(int_number)
 print(type(turn_int_to_float_number))
+"""
+
+### STRINGS ###
+print("This is a string in double quotes")
+print('This is a string in single quotes')
+
+skill = "Python"
+print(type(skill))
+
+print(skill.upper())
+
+print(skill.lower())
+
+print(skill.replace("P", "J"))
+
+job_title = "Data Analyst" # rename this to Doto Analyst
+job_title = job_title.replace("a", "o", 2)
+print(job_title)
+
+doto, analyst = job_title.split(sep=" ", maxsplit=1)
+print(doto)
+print(analyst)
+
+print(str.__add__("Data", " Analyst"))
+print("Data".__add__(" Analyst"))
+print("Data" + " Analyst") # what you will realistically use
+
+print("Data Analyst\n" * 10)
+
+print("Data Analyst".__len__())
+print(len("Data Analyst"))
