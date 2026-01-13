@@ -156,6 +156,7 @@ print(type(turn_int_to_float_number))
 """
 
 ### STRINGS ###
+"""
 print("This is a string in double quotes")
 print('This is a string in single quotes')
 
@@ -184,3 +185,19 @@ print("Data Analyst\n" * 10)
 
 print("Data Analyst".__len__())
 print(len("Data Analyst"))
+"""
+
+### STRING FORMATTING ###
+
+role = "Data Analyst"
+skill = "Python"
+
+# S.format(*args, *kwargs)
+    # *args = arguments
+    # *kwargs = keyword arguments
+
+# Create the string "Role: Data Analyst"
+print("Role: {}".format(role))
+
+# Create the string "Role: Data Analyst; Skill Required: Python"
+print("Role: {}; Skill Required: {}".format(role, skill))
