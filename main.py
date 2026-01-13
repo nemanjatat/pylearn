@@ -147,3 +147,8 @@ analyst = "analyst".capitalize()
 data_analyst = f"{data} {analyst}"
 print(data_analyst)
 """
+# float
+int_number = 102
+print(type(int_number))
+turn_int_to_float_number = float(int_number)
+print(type(turn_int_to_float_number))
