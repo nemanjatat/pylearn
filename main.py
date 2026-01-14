@@ -287,3 +287,20 @@ printx(x)
 
 x *= 2
 printx(x)
+
+# Comparison Operators
+
+#   - Operator -        - Name -           - Example -
+#       ==              Equal to                x == y
+#       !=              Not equal to            x != y
+#       >               Greater than            x > y
+#       <               Less than               x < y
+#       >=              Greater than or equal   x >= y
+#       <=              Less than or equal      x <= y
+
+salary_tom = 60_000
+salary_ken = 40_000
+
+print(salary_tom == salary_ken)
+
+print(1 == 1)
