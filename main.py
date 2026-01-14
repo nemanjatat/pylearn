@@ -188,7 +188,7 @@ print(len("Data Analyst"))
 """
 
 ### STRING FORMATTING ###
-
+"""
 role = "Data Analyst"
 skill = "Python"
 
@@ -225,3 +225,65 @@ print(', '.join(years_experience))
 skills = ["Python", "SQL", "Excel"] # this is a list
 
 print(", ".join(skills))
+"""
+
+### OPERATORS PART 1 ###
+
+print(2+2)  # addition
+print(4-2)  # subtraction
+print(4*3)  # multiplication
+print(10/2) # division
+print(10%2) # modulus
+print(3**2) # exponentiation
+print(11/3) # floor division
+
+hey_there = print
+
+hey_there("What's" + " Up" + "!")
+
+print(5/2)
+print(5//2)
+
+print(f"5 divided by 2 is {5//2}, with a remainder of {5%2}")
+
+# Order of Operations
+    # 1. Parentheses: Anything in parentheses is executed first
+    # 2. Exponents: Operations involving exponents (including roots, indicated as fraction exponents)
+    # 3. Multiplication and Division: Processed from left to right
+    # 4. Addition and Subtraction: Also processed from left to right
+
+min_salary = 20_000 # _ is ignored by the interpreter
+max_salary = 80_000
+
+avg_salary = (min_salary + max_salary) / 2
+print(avg_salary)
+
+#   - Operator -    - Operator Type -       - Example -
+#       =               Assign                  x = y
+#       +=              Add and assign          x += y
+#       -=              Subtract and assign     x -= y
+#       *=              Multiply and assign     x *= y
+#       /=              Divide and assign       x /= y
+#       %=              Modulus and assign      x %= y
+#       **=             Exponent and assign     x **= y
+#       //=             Floor divide and assign x //= y
+
+applicant_1 = "Tom"
+applicant_2 = "Ken"
+
+applicant_1, applicant_2 = applicant_2, applicant_1
+
+print(f"Applicant 1:\t{applicant_1}\nApplicant 2:\t{applicant_2}")
+
+
+def printx(num):
+    print(num)
+
+x = 1
+printx(x)
+
+x += 1
+printx(x)
+
+x *= 2
+printx(x)
