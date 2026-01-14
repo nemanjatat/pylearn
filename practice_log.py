@@ -1,21 +1,18 @@
-class Movie:
-    def __init__(self, name, genre, year):
-        self.name = name
-        self.genre = genre
-        self.year = year
+available_movies = ["THE LAST SAMURAI", "300", "KNIVES OUT"]
 
-    def display_info(self):
-        print(f"Movie name:\t\t{self.name}\nMovie genre:\t{self.genre}\nMovie year:\t\t{self.year}")
+while True:
+    print("Enter movie you want to watch:", end=" ")
+    user_movie_input = input()
 
-print("Movie name: ")
-name = input()
+    if available_movies.__contains__(user_movie_input.upper()):
+        print("That movie is available!")
+    else:
+        print("We don't have that movie!")
 
-print("Movie genre: ")
-genre = input()
+    print("Would you like to check for another movie? (Y/N)")
+    user_another_movie_answer = input()
 
-print("Movie release year: ")
-year = input()
-
-movie = Movie(name, genre, year)
-
-movie.display_info()
+    if user_another_movie_answer.upper() == "Y":
+        pass
+    else:
+        break
