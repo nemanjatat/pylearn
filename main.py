@@ -228,7 +228,7 @@ print(", ".join(skills))
 """
 
 ### OPERATORS PART 1 ###
-
+"""
 print(2+2)  # addition
 print(4-2)  # subtraction
 print(4*3)  # multiplication
@@ -304,3 +304,29 @@ salary_ken = 40_000
 print(salary_tom == salary_ken)
 
 print(1 == 1)
+"""
+
+### Conditional Statements
+
+# Applicant skill
+applicant_skill = "SQL"
+
+# Skill required for job posting
+job_skill = "SQL"
+
+if applicant_skill == job_skill:
+    print("Applicant Skills Match!")
+
+
+applicant_skill = "SQL"
+applicant_years_of_experience = 5
+job_skill = "SQL"
+
+if applicant_skill == job_skill and applicant_years_of_experience >= 5:
+    print("Applicant fulfills skills and experience!")
+elif applicant_skill == "Python":
+    pass # or ...
+elif applicant_skill == job_skill and applicant_years_of_experience < 5:
+    print("Applicant has skill but no experience")
+else:
+    print("Nothing to see here.")
