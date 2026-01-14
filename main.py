@@ -201,3 +201,27 @@ print("Role: {}".format(role))
 
 # Create the string "Role: Data Analyst; Skill Required: Python"
 print("Role: {}; Skill Required: {}".format(role, skill))
+
+# f-Strings - Formatted String Literals
+
+role = "Data Analyst"
+skill = "Python"
+
+print(f"Role: {role}; Skill Required: {skill}")
+
+# %-formatting (printf-style formatting)
+
+role = "Data Analyst"
+skill = "Python"
+
+print("Role: %s; Skill Required: %s" % (role, skill))
+
+# join() Method
+
+years_experience = "0123456789"
+
+print(', '.join(years_experience))
+
+skills = ["Python", "SQL", "Excel"] # this is a list
+
+print(", ".join(skills))
