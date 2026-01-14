@@ -1,21 +1,21 @@
-class Vacation:
-    def __init__(self, location, accommodation, duration):
-        self.location = location
-        self.accommodation = accommodation
-        self.duration = duration
+class Movie:
+    def __init__(self, name, genre, year):
+        self.name = name
+        self.genre = genre
+        self.year = year
 
-    def display_vacation_info(self):
-        print(f"Location:       {self.location}\nAccommodation: {self.accommodation}\nDuration:     {self.duration} weeks")
+    def display_info(self):
+        print(f"Movie name:\t\t{self.name}\nMovie genre:\t{self.genre}\nMovie year:\t\t{self.year}")
 
-print("Where would you like to go?")
-location = input()
+print("Movie name: ")
+name = input()
 
-print("What type of accommodation would you like?(Hotel/Hostel/Other)")
-accommodation = input()
+print("Movie genre: ")
+genre = input()
 
-print("How long are you staying?(in weeks)")
-duration = input()
+print("Movie release year: ")
+year = input()
 
-vacation = Vacation(location, accommodation, duration)
+movie = Movie(name, genre, year)
 
-vacation.display_vacation_info()
+movie.display_info()
