@@ -307,7 +307,7 @@ print(1 == 1)
 """
 
 ### Conditional Statements
-
+"""
 # Applicant skill
 applicant_skill = "SQL"
 
@@ -330,3 +330,17 @@ elif applicant_skill == job_skill and applicant_years_of_experience < 5:
     print("Applicant has skill but no experience")
 else:
     print("Nothing to see here.")
+"""
+
+### LISTS
+
+job_skills = ["excel", "tableau", "excel"]
+print(job_skills)
+
+job_skills.append("python")
+print(job_skills)
+
+job_skills.remove("tableau")
+print(job_skills)
+
+print(len(job_skills))
