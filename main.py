@@ -18,7 +18,7 @@ print(f"Score's original type: {type(score)}")
 score = int(score)
 print(f"Score's altered type: {type(score)}")
 
-print(f"in_cinema's origianl type: {type(in_cinemas)}")
+print(f"in_cinema's original type: {type(in_cinemas)}")
 in_cinemas = str(in_cinemas)
 print(f"in_cinema's altered type: {type(in_cinemas)}")
 
