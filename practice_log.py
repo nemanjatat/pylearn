@@ -1,8 +1,8 @@
-available_movies = ["THE LAST SAMURAI", "300", "KNIVES OUT", "Mission Impossible"]
-supported_devices = ["SMART TV", "PC", "ANDROID", "IOS"]
+cities = {
+    "Tokyo": 14,
+    "Madrid": 3,
+    "Berlin": 4
+}
 
-for movie in available_movies:
-    print(movie)
-
-for supported_device in supported_devices:
-    print(supported_device)
+cities.pop("Madrid")
+print(sum(cities.values()))
