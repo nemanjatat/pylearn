@@ -1,33 +1,18 @@
-# input() = a function that prompts the user to enter data
-#           returns the entered data as a string
-"""
-new_item = input("What new item are you adding to the collection?: ")
-item_stock = int(input(f"How many {new_item}s are you adding to the collection?: "))
+# madlibs game
+# word game where you create a story
+# by filling in blanks with random words
 
-print(f"You already have an extra {new_item}, +1")
-item_stock += 1
+print("=============\n===MADLIBS===\n=============")
 
-print("============\nITEM INFO\n============")
-print(f"New item added: {new_item}\nCurrent stock: {item_stock}")
-"""
+adjective1 = input("Insert adjective 1: ")
+adjective2 = input("Insert adjective 2: ")
+noun = input("Insert noun: ")
+adjective3 = input("Insert adjective 3:")
+verb = input("Insert verb: ")
 
-# exercises
-
-# rectangle area calc
-"""
-l = float(input("Enter length: "))
-w = float(input("Enter width: "))
-
-A = w * l
-
-print(f"The area is {A}cm²") # ² = superscript (alt + 0178)
-"""
-
-# shopping cart program
-item = input("What are you buying?: ")
-price = float(input(f"What's the price for 1 {item}?: "))
-quantity = int(input(f"How many {item}s, priced at {price} would you like to buy?: "))
-
-total_price = quantity * price
-
-print(f"Total price: {total_price}")
+print(f"Last Saturday, I boarded the world’s most {adjective1} train at the historic Central Station. The conductor, who had a remarkably {adjective2} mustache, welcomed us aboard the Trans-Continental Express with a dramatic bow.")
+print(f"Everything seemed normal until a passenger released a {noun} in the dining car.")
+print(f"Within seconds, the entire train became incredibly {adjective3}. People climbed onto their seats. A business executive tried to use a napkin as a shield. The snack cart rolled away unattended.")
+print(f"Determined to restore order, I bravely decided to {verb} toward the chaos.")
+print(f"But just as I reached the dining car, the mysterious {noun} suddenly made a polite squeaking noise and revealed itself to be completely harmless.")
+print(f"The conductor adjusted his hat, cleared his throat, and announced, \"Ladies and gentlemen, please remember that all emotional support farm animals must remain in their seats at all times.\"")
