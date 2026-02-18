@@ -1,6 +1,6 @@
-response = input("Would you like some food? (Y/N): ")
+name_of_movie = input("What's your favorite movie?\n")
 
-if response == "Y":
-    print("Have some food!")
+if name_of_movie == "":
+    print("You haven't typed anything!")
 else:
-    print("No food for you!")
+    print(f"{name_of_movie} is a great movie!")
