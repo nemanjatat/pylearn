@@ -1,8 +1,13 @@
-import math
+# if    = do some code only IF some condition is true
+# else  = do something else
 
-a = float(input("Enter side A: "))
-b = float(input("Enter side B: "))
+age = int(input("Enter your age to finishing signing up: "))
 
-c = math.sqrt(pow(a, 2) + pow(b, 2))
-
-print(f"Side C = {c}")
+if age >= 100:
+    print("You are too old to sign up!")
+elif age >= 18:
+    print("You are now signed up!")
+elif age < 0:
+    print("You haven't been born yet!")
+else:
+    print("You must be over 18 or older to sign up!")
