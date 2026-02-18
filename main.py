@@ -1,30 +1,11 @@
-items = 10
+x = 3.14
+y = 4
+z = 5
 
-items = items + 1
-items += 1
-print(items)
-input()
+print(round(x))
+print(abs(y))
+print(pow(4,3))
+print(max(x, y, z))
+print(min(x, y, z))
 
-items = items - 1
-items -= 1
-print(items)
-input()
-
-items = items / 2
-items /= 2
-print(items)
-input()
-
-items = items * 2
-items *= 2
-print(items)
-input()
-
-items = items ** 2
-items **= 2
-print(items)
-input()
-
-remainder = items % 3
-print(remainder)
 input()
