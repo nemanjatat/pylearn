@@ -1,11 +1,7 @@
-x = 3.14
-y = 4
-z = 5
+import math
 
-print(round(x))
-print(abs(y))
-print(pow(4,3))
-print(max(x, y, z))
-print(min(x, y, z))
-
-input()
+print(math.pi)
+print(math.e)
+print(math.sqrt(9))
+print(math.ceil(9.1))
+print(math.floor(9.6))
