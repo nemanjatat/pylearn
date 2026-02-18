@@ -1,12 +1,16 @@
-is_online = True
-for_sale = False
+# python calculator
 
-if is_online:
-    print("User is online!")
-else:
-    print("User is offline!")
+operator = input("Enter an operator (+ - * /)\n")
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
 
-if for_sale:
-    print("That item is for sale!")
+if operator == "+":
+    pass
+elif operator == "-":
+    pass
+elif operator == "*":
+    pass
+elif operator == "/":
+    pass
 else:
-    print("That item is NOT for sale!")
+    pass
