@@ -1,7 +1,8 @@
 import math
 
-radius = float(input(f"Enter the radius of a circle: "))
+a = float(input("Enter side A: "))
+b = float(input("Enter side B: "))
 
-area = 2 * math.pi * pow(radius, 2)
+c = math.sqrt(pow(a, 2) + pow(b, 2))
 
-print(f"The area of the circle is: {round(area, 2)}cm")
+print(f"Side C = {c}")
