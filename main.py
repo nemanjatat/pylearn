@@ -1,16 +1,15 @@
-# python calculator
+# weight conversion program
 
-operator = input("Enter an operator (+ - * /)\n")
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+weight = float(input("Enter your weight: "))
+unit = input("Is that kilograms or pounds? (K or L): ")
 
-if operator == "+":
-    print(f"{num1} + {num2} = {num1 + num2}")
-elif operator == "-":
-    print(f"{num1} - {num2} = {num1 - num2}")
-elif operator == "*":
-    print(f"{num1} * {num2} = {num1 * num2}")
-elif operator == "/":
-    print(f"{num1} / {num2} = {num1 / num2}")
+if unit == "K":
+    weight = weight * 2.205
+    unit = "Lbs"
+    print(f"Your weight is: {round(weight, 2)} {unit}")
+elif unit == "L":
+    weight = weight / 2.205
+    unit = "Kg"
+    print(f"Your weight is: {round(weight, 2)} {unit}")
 else:
-    print("Something went wrong!")
+    print(f"{unit} is not a valid unit")
