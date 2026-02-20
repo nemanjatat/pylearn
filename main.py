@@ -5,12 +5,12 @@ num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 
 if operator == "+":
-    pass
+    print(f"{num1} + {num2} = {num1 + num2}")
 elif operator == "-":
-    pass
+    print(f"{num1} - {num2} = {num1 - num2}")
 elif operator == "*":
-    pass
+    print(f"{num1} * {num2} = {num1 * num2}")
 elif operator == "/":
-    pass
+    print(f"{num1} / {num2} = {num1 / num2}")
 else:
-    pass
+    print("Something went wrong!")
