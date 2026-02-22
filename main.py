@@ -3,10 +3,10 @@
 #                     and = both conditions must be true
 #                     not = inverts the condition (not false, not true)
 
-temp = 25
-is_raining = False
+age = int(input("How old are you: "))
+has_membership = input("Do you have a membership (Y/N): ")
 
-if temp > 35 or temp < 0 or is_raining:
-    print("The outdoor event is cancelled")
+if age >= 18 and has_membership == "Y":
+    print("You are 18 or older and have a membership!")
 else:
-    print("The outdoor event is still scheduled")
+    print("You are either below 18 y/o or don't have a membership")
