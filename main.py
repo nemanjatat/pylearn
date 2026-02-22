@@ -1,11 +1,12 @@
-# temperature conversion program
+# logical operators = evaluate multiple conditions (or, and, not)
+#                     or  = at least one condition must be true
+#                     and = both conditions must be true
+#                     not = inverts the condition (not false, not true)
 
-temperature = float(input("Enter temperature value: "))
-unit = input("Is that in celsius or fahrenheit? (C or F): ")
+temp = 25
+is_raining = True
 
-if unit == "C":
-    print(f"{temperature}{unit} is {temperature * (9/5) + 32}F")
-elif unit == "F":
-    print(f"{temperature}{unit} is {(temperature - 32) / (9/5)}C")
+if temp > 35 or temp < 0 or is_raining:
+    print("The outdoor event is cancelled")
 else:
-    print(f"{unit} is not a valid unit!")
+    print("The outdoor event is still scheduled")
