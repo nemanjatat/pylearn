@@ -2,13 +2,13 @@
 #                          print or assign one of two values based on condition
 #                          x if condition else y
 
-positive_or_negative_num = 6
-even_or_odd_num = 2
-a = 10
-b = 13
-age = 20
-temperature = 30
-user_role = "admin"
+positive_or_negative_num = -5
+even_or_odd_num = 3
+a = 25
+b = 20
+age = 15
+temperature = 20
+user_role = "guest"
 
 pos_neg_result = ("POSITIVE" if positive_or_negative_num >= 0 else "NEGATIVE")
 print(pos_neg_result)
