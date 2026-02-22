@@ -3,10 +3,13 @@
 #                     and = both conditions must be true
 #                     not = inverts the condition (not false, not true)
 
-age = int(input("How old are you: "))
-has_membership = input("Do you have a membership (Y/N): ")
+items = ["pencil", "book", "ruler"]
 
-if age >= 18 and has_membership == "Y":
-    print("You are 18 or older and have a membership!")
+add_item = input("Add a new item: ")
+
+if add_item not in items:
+    items.append(add_item)
+    for item in items:
+        print(item)
 else:
-    print("You are either below 18 y/o or don't have a membership")
+    print("That item already exists in the list!")
