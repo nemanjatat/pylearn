@@ -1,26 +1,15 @@
-# conditional expression = a one-line shortcut for the if-else statement (ternary operator)
-#                          print or assign one of two values based on condition
-#                          x if condition else y
+name = input("Enter your full name: ")
 
-positive_or_negative_num = -5
-even_or_odd_num = 3
-a = 25
-b = 20
-age = 15
-temperature = 20
-user_role = "guest"
+print(len(name)) # is actually a function, not a method
+print(name.find("a"))
+print(name.rfind("a"))
+print(name.capitalize())
+print(name.upper())
+print(name.lower())
+print(name.isdigit())
+print(name.isalpha())
 
-pos_neg_result = ("POSITIVE" if positive_or_negative_num >= 0 else "NEGATIVE")
-print(pos_neg_result)
-even_or_odd_result = ("EVEN" if even_or_odd_num % 2 == 0 else "ODD")
-print(even_or_odd_result)
-max_num = (f"{a} is greater than {b}" if a > b else f"{b} is greater than {a}")
-print(max_num)
-min_num = (f"{a} is lower than {b}" if a < b else f"{b} is lower than {a}")
-print(min_num)
-age_check = ("ADULT" if age >= 18 else "CHILD")
-print(age_check)
-temp_status = ("HOT" if temperature > 20 else "COLD")
-print(temp_status)
-access_level = ("FULL ACCESS" if user_role == "admin" else "LIMITED ACCESS")
-print(access_level)
+phone_number = input("Enter your phone number: ")
+
+print(phone_number.count("-"))
+print(phone_number.replace("-", ""))
