@@ -4,7 +4,7 @@
 #                     not = inverts the condition (not false, not true)
 
 temp = 25
-is_raining = True
+is_raining = False
 
 if temp > 35 or temp < 0 or is_raining:
     print("The outdoor event is cancelled")
