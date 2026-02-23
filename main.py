@@ -1,17 +1,13 @@
-# validate user input exercise
-# 1. username is no more than 12 characters
-# 2. username must not contain spaces
-# 3. username must not contain digits
+# indexing = accessing elements of a sequence using [] (indexing operator)
+#            [start : end : step]
 
-while True:
-    username = input("Enter your username: ")
+credit_number = "1234-5678-9012-3456"
 
-    if len(username) > 12:
-        print("Username must not contain more than 12 characters")
-    elif not username.find(" ") == -1:
-        print("Username must not contain any spaces")
-    elif not username.isalpha():
-        print("Username must not contain any numbers")
-    else:
-        print(f"Welcome {username}!")
-        break
+print(credit_number[0])
+print(credit_number[0:4]) # or just [:4]
+print(credit_number[5:9])
+print(credit_number[5:19]) # or just [5:]
+print(credit_number[-1]) # negative index, starts from the end of the string
+print(credit_number[-2])
+print(credit_number[::2])
+print(credit_number[::3])
